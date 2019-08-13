@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .servicesContainer {
-	width:80%;
+	width:100%;
 	padding-top: 30px;
 	padding-bottom: 20px;
 	padding-left: 30px;
@@ -169,13 +169,42 @@ footer.servicesFooter {
 	padding: 20px 0;
 }
 
+/* *************************** MEDIA QUERIES FOR TABLET ***************************************************** */
+
+@media only screen and (max-width: 800px) {
+
+    .sevicesContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header.servicesHeader {
+        flex-direction: column-reverse;
+    }
+
+    header.servicesHeader nav {
+        padding-bottom: 5%;
+    }
+
+    header.servicesHeader nav a {
+        padding: 5% 3%;
+        margin: 0 auto;
+    }
+
+    header.servicesHeader a {
+        width: 30%;
+        margin: 0 auto;
+        padding-bottom: 5%;
+    }
+}
 
 /* *************************** MEDIA QUERIES FOR MOBILE ***************************************************** */
 
 @media only screen and (max-width: 500px) {
-    .sevicesContainer {
+    .servicesContainer {
         width: 100%;
         margin: 0 auto;
+        /* padding-left: 20%; */
     }
 
     header.servicesHeader {
@@ -212,11 +241,6 @@ footer.servicesFooter {
     .bottomWrapper {
         display:flex;
         flex-direction: column;
-    }
-
-    section .servicesBottomPara {
-        display: flex;
-        flex-direction: column;
         width: 100%;
     }
 
@@ -228,3 +252,4 @@ footer.servicesFooter {
         padding: 10%;
     }
 }
+
